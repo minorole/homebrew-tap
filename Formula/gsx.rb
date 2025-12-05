@@ -1,8 +1,8 @@
 class Gsx < Formula
   desc "Ghostty Session Manager - launch AI-ready dev environments"
   homepage "https://github.com/minorole/gsx"
-  url "https://github.com/minorole/gsx/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "0edbdad8bdfd03879d20d3d195661215148da907f5b6f82e0320f3e9fb9835ed"
+  url "https://github.com/minorole/gsx/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "83c3a755f802bb5f8b6cb996eb0088e44709559850d563422cf124e5e69ce6e6"
   license "MIT"
 
   depends_on :macos
@@ -10,6 +10,9 @@ class Gsx < Formula
   def install
     # Install main script
     bin.install "bin/gsx"
+
+    # Install version file (single source of truth)
+    (share/"gsx").install "VERSION"
 
     # Install library files
     (share/"gsx/lib").install Dir["lib/*.zsh"]
