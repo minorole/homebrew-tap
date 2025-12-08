@@ -12,16 +12,18 @@ brew tap minorole/tap
 
 | Formula | Description |
 |---------|-------------|
-| `gsx` | Ghostty Session Manager - launch AI-ready dev environments |
+| `gpane` | Ghostty Session Manager - launch AI-ready dev environments |
 
-### gsx
+### gpane
 
 ```bash
-brew install minorole/tap/gsx
+brew install minorole/tap/gpane
 ```
 
 Or after tapping:
 
 ```bash
-brew install gsx
+brew install gpane
 ```
+
+> **Note:** `gpane` was formerly known as `gsx`. The old formula still works but is deprecated.

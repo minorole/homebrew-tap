@@ -1,13 +1,6 @@
-# gsx has been renamed to gpane (to avoid conflict with Ghostscript)
-# This formula redirects to gpane for backwards compatibility
-
-class Gsx < Formula
-  desc "Ghostty Session Manager (renamed to gpane)"
+class Gpane < Formula
+  desc "Ghostty Session Manager - launch AI-ready dev environments"
   homepage "https://github.com/minorole/gsx"
-
-  deprecate! date: "2025-12-08", because: "has been renamed to gpane"
-
-  # Point to the same release as gpane
   url "https://github.com/minorole/gsx/archive/refs/tags/v0.2.4.tar.gz"
   sha256 "5b2a2c421027e83822d10bdaf01ff00f3758b32da1d1179ba4073793aef67f55"
   license "MIT"
@@ -36,15 +29,17 @@ class Gsx < Formula
 
   def caveats
     <<~EOS
-      gsx has been RENAMED to gpane (to avoid conflict with Ghostscript).
+      gpane requires Accessibility permission to control Ghostty windows.
 
-      Please use 'gpane' instead of 'gsx':
-        brew uninstall gsx
-        brew install gpane
+      Grant permission in:
+        System Settings → Privacy & Security → Accessibility
 
-      Both commands work, but 'gsx' shows a daily reminder.
+      Add your terminal app to the list and ensure it's enabled.
 
       Run 'gpane setup' to configure your first session.
+
+      Note: gpane was formerly known as 'gsx'. The 'gsx' command still
+      works as a compatibility wrapper.
     EOS
   end
 
