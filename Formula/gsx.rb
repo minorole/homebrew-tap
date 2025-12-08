@@ -1,8 +1,8 @@
 class Gsx < Formula
   desc "Ghostty Session Manager - launch AI-ready dev environments"
   homepage "https://github.com/minorole/gsx"
-  url "https://github.com/minorole/gsx/archive/refs/tags/v0.2.2.tar.gz"
-  sha256 "e65726dda1468c83c1f5894f550699eeb86f2feacc55bd876b64ddfbd6591d6d"
+  url "https://github.com/minorole/gsx/archive/refs/tags/v0.2.4.tar.gz"
+  sha256 "5b2a2c421027e83822d10bdaf01ff00f3758b32da1d1179ba4073793aef67f55"
   license "MIT"
 
   depends_on :macos
