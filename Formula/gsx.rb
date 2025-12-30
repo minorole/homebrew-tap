@@ -8,8 +8,8 @@ class Gsx < Formula
   deprecate! date: "2025-12-08", because: "has been renamed to gpane"
 
   # Point to the same release as gpane
-  url "https://github.com/minorole/gsx/archive/refs/tags/v0.2.6.tar.gz"
-  sha256 "f3e5b41e33dcb331a6c0f982c57fe79f563b534e3495b1826c01c2885aca3116"
+  url "https://github.com/minorole/gsx/archive/refs/tags/v0.2.7.tar.gz"
+  sha256 "67162a84829e123f09c2f3847fe26d9def984d5cc0005b79973c6d7a2b2ca815"
   license "MIT"
 
   depends_on :macos
