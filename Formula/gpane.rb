@@ -1,8 +1,8 @@
 class Gpane < Formula
   desc "Ghostty Session Manager - launch AI-ready dev environments"
   homepage "https://github.com/minorole/gsx"
-  url "https://github.com/minorole/gsx/archive/refs/tags/v0.3.1.tar.gz"
-  sha256 "3d30d32574d8e6890c636025fbff5cdf525ca5f644108a7bdb4b537e08e2aa96"
+  url "https://github.com/minorole/gsx/archive/refs/tags/v0.3.2.tar.gz"
+  sha256 "5ad75824690f6a98eb851cf6cfd934fb9b5fc1c42ef6d1c7bf0ea5225b2cff61"
   license "MIT"
 
   depends_on :macos
